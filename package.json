@@ -1,11 +1,11 @@
 {
-  "name": "fontgen-loader",
-  "version": "0.2.1",
+  "name": "font-gen-loader",
+  "version": "0.2.2",
   "description": "A WebPack loader to automaticaly generate font files and CSS to make your own icon font",
-  "repository": "DragonsInn/fontgen-loader",
+  "repository": "pankajpatel/fontgen-loader",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "webpack --config=test/webpack.config.js"
   },
   "keywords": [
     "font",
@@ -17,7 +17,10 @@
     "webpack",
     "loader"
   ],
-  "author": "Ingwie Phoenix <ingwie2000@gmail.com>",
+  "author": [
+    "Ingwie Phoenix <ingwie2000@gmail.com>",
+    "Pankaj Patel <patel.pankaj@live.in>"
+  ],
   "license": "MIT",
   "dependencies": {
     "loader-utils": "^0.2.10",
