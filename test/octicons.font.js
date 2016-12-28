@@ -4,5 +4,6 @@ module.exports = {
     fontName: "Octicons",
     files: glob("./octicons/svg/*.svg"),
     baseClass: "octicon",
-    classPrefix: "octicon-"
+    classPrefix: "octicon-",
+    cssFile: true
 };
