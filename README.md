@@ -113,6 +113,10 @@ Possible values are: `["svg", "eot", "wof", "ttf"]`.
 - `cssTemplate`, String
 Which template to use? By default, a CSS one is used. The template is to be processed by Handlebars. See [the generator](https://github.com/sunflowerdeath/webfonts-generator)'s readme itself for more info.
 
+- `cssFile`, Boolean
+Default: `false`
+Will generate CSS file as `[fontName].css` in the bundle output directory
+
 For additional options, see the generator's README file.
 
 ### Special configuration

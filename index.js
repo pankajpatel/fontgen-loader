@@ -105,6 +105,10 @@ module.exports = function (content) {
         formatOptions: config.formatOptions || {}
     };
 
+    if( config.cssFile ){
+        fontconf.cssFile = config.cssFile;
+    }
+
     // This originally was in the object notation itself.
     // Unfortunately that actually broke my editor's syntax-highlighting...
     // ... what a shame.
@@ -180,6 +184,9 @@ module.exports = function (content) {
                   + ';charset=utf-8;base64,'
                   + (new Buffer(res[format]).toString('base64'));
             }
+        }
+        if( fontconf.cssFile ){
+            self.emitFile( (fontconf.fontName + '.css'), res.generateCss(urls));
         }
         cb(null, res.generateCss(urls));
     });
