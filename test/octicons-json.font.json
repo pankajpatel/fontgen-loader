@@ -4,5 +4,6 @@
         "./octicons/svg/*.svg"
     ],
     "baseClass" : "octicon-json",
-    "classPrefix" : "octicon-json-"
+    "classPrefix" : "octicon-json-",
+    "cssFile": true
 }

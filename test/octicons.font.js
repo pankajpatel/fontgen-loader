@@ -5,5 +5,5 @@ module.exports = {
     files: glob("./octicons/svg/*.svg"),
     baseClass: "octicon",
     classPrefix: "octicon-",
-    cssFile: true
+    cssFile: 'css'
 };

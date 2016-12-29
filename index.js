@@ -186,7 +186,11 @@ module.exports = function (content) {
             }
         }
         if( fontconf.cssFile ){
-            self.emitFile( (fontconf.fontName + '.css'), res.generateCss(urls));
+            if(typeof fontconf.cssFile === 'string'){
+                self.emitFile( path.join(fontconf.cssFile, fontconf.fontName + '.css'), res.generateCss(urls));
+            } else {
+                self.emitFile( (fontconf.fontName + '.css'), res.generateCss(urls));
+            }
         }
         cb(null, res.generateCss(urls));
     });

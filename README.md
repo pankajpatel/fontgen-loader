@@ -115,7 +115,10 @@ Which template to use? By default, a CSS one is used. The template is to be proc
 
 - `cssFile`, Boolean
 Default: `false`
-Will generate CSS file as `[fontName].css` in the bundle output directory
+Possible Values: [`false`, `true`, `"<path string relative to webpack output path>"`]
+    - If `false`, no css file will be generated
+    - If `true`, css file as `[fontName].css` in the webpack's bundle output directory
+    - If `<path>`, the css file will be generated path `path.join(<path>, '[fontName].css')`
 
 For additional options, see the generator's README file.
 
