@@ -3,6 +3,6 @@
   "files" : [
     "./**/svg/**/*.svg"
   ],
-  "baseClass" : "octicon2",
+  "baseSelector" : "octicon2",
   "classPrefix" : "octicon2-"
 }

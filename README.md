@@ -56,7 +56,7 @@ module.exports = {
         ],
     "fontName": "Awesomecons",
     "classPrefix": "ai-",
-    "baseClass": "ai",
+    "baseSelector": "ai",
     "fixedWidth": true,
     "types": ["eot", "woff", "ttf", "svg"] // this is the default
 }
@@ -104,7 +104,7 @@ Name of your font.
 - `classPrefix`, String
 The prefix to be used with each icon class.
 
-- `baseClass`, String
+- `baseSelector`, String
 The base class, under which each icon class is to be crated.
 
 - `types`, Array
