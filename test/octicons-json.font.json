@@ -3,7 +3,7 @@
     "files" : [
         "./octicons/svg/*.svg"
     ],
-    "baseSelector" : "octicon-json",
+    "baseSelector" : ".octicon-json",
     "classPrefix" : "octicon-json-",
     "cssFile": true
 }

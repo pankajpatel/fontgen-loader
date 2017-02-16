@@ -56,7 +56,7 @@ module.exports = {
         ],
     "fontName": "Awesomecons",
     "classPrefix": "ai-",
-    "baseSelector": "ai",
+    "baseSelector": ".ai",
     "fixedWidth": true,
     "types": ["eot", "woff", "ttf", "svg"] // this is the default
 }
@@ -102,13 +102,15 @@ An array of SVG icon files. Supports glob
 Name of your font.
 
 - `classPrefix`, String
+Default: `icon-`
 The prefix to be used with each icon class.
 
 - `baseSelector`, String
-The base class, under which each icon class is to be crated.
+Default: `.icon`
+The base CSS selector, under which each icon class is to be crated.
 
 - `types`, Array
-Possible values are: `["svg", "eot", "wof", "ttf"]`.
+Possible values are: `["svg", "eot", "woff", "woff2", "ttf"]`.
 
 - `cssTemplate`, String
 Which template to use? By default, a CSS one is used. The template is to be processed by Handlebars. See [the generator](https://github.com/sunflowerdeath/webfonts-generator)'s readme itself for more info.

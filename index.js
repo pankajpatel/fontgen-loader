@@ -90,6 +90,15 @@ module.exports = function (content) {
         formats = [formats];
     }
 
+    // Populate templateOptions with only what's been specifically passed.
+    // Otherwise rely on upstream defaults.
+    var templateOptions = {};
+    ['baseClass', 'baseSelector', 'classPrefix'].forEach(function(f) {
+        if (f in config) {
+            templateOptions[f] = config[f];
+        }
+    });
+
     var fontconf = {
         files: config.files,
         fontName: config.fontName,
@@ -97,10 +106,7 @@ module.exports = function (content) {
         order: formats,
         fontHeight: config.fontHeight || 1000, // Fixes conversion issues with small svgs
         codepoints: config.codepoints,
-        templateOptions: {
-            baseSelector: config.baseClass || "icon",
-            classPrefix: "classPrefix" in config ? config.classPrefix : "icon-"
-        },
+        templateOptions: templateOptions,
         dest: "",
         writeFiles: false,
         formatOptions: config.formatOptions || {}
