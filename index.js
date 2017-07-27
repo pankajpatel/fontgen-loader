@@ -154,10 +154,8 @@ module.exports = function (content) {
 
     var cb = this.async();
     var self = this;
-    var opts = this.options || {};
-    opts.output = opts.output || {};
     var pub = (
-      opts.output.publicPath || "/"
+      config.publicPath || "/"
     );
     var embed = !!params.embed;
 
