@@ -155,7 +155,7 @@ module.exports = function (content) {
     var cb = this.async();
     var self = this;
     var pub = (
-      config.publicPath || "/"
+        config.publicPath || params.publicPath || "/"
     );
     var embed = !!params.embed;
 
