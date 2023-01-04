@@ -28,7 +28,7 @@
     "glob": "^6.0.2"
   },
   "devDependencies": {
-    "css-loader": "^0.28.0",
+    "css-loader": "^6.0.0",
     "file-loader": "^6.0.0",
     "node-libs-browser": "^0.7.0",
     "style-loader": "^0.23.0",
