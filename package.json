@@ -30,7 +30,7 @@
   "devDependencies": {
     "css-loader": "^6.0.0",
     "file-loader": "^6.0.0",
-    "node-libs-browser": "^0.7.0",
+    "node-libs-browser": "^2.0.0",
     "style-loader": "^3.0.0",
     "url-loader": "^4.0.0",
     "webpack": "^1.9.11"
